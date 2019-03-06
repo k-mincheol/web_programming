@@ -4,9 +4,26 @@
 <head lang="ko">
     <title>protfolio</title>
     <style>
+        /* 초기화 */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
         body {
-            width: 100%;
-            margin: 0 auto;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            border: 0;
         }
 
         #all {
@@ -14,50 +31,106 @@
             margin-right: 20px;
         }
 
-        #header {
-            width: 100%;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            box-shadow: -1px 1px 2px black;
+
+        #main_header {
+            /* 중앙정렬 */
+            width: 960px;
+            margin: 0 auto;
+            /* 절대좌표 */
+            height: 160px;
+            position: relative;
         }
 
-        #aside {
-            width: 200px;
-            float: left;
+        #main_header>#title {
+            position: absolute;
+            left: 20px;
+            top: 30px;
         }
 
-        #section {
-            width: 760px;
-            float: left;
+        #main_header>#main_gnb {
+            position: absolute;
+            right: 10px;
+            top: 30px;
         }
 
-        #wrap {
+        #main_header>#main_lnb {
+            position: absolute;
+            left: 230px;
+            top: 30px;
+        }
+
+        #main_lnb>ul {
             overflow: hidden;
+        }
+
+        #main_lnb>ul>li {
+            float: left;
+            margin: 0px 50px;
+        }
+
+        #main_lnb>ul>li>a {
+            display: block;
+            padding: 10px 20px;
+
+        }
+
+        #content {
+            /* 중앙 정렬 */
+            width: 960px;
+            margin: 0 auto;
+            /* 수평 레이아웃 구성 */
+            overflow: hidden;
+        }
+
+        #content>#main_section {
+            width: 400px;
+            float: left;
+        }
+
+        #content>#main_aside {
+            width: 550px;
+            float: right;
         }
     </style>
 </head>
 
 <body>
-    <div id="all">
-        <div id="header">
-            <a href="">Home</a>
-            <a href="">Projects</a>
-            <a href="">About</a>
+    <header id="main_header">
+        <div id="title">
+            <h1>protfolio</h1>
         </div>
-        <div id="navigation">
-            <h1>nav</h1>
-        </div>
-        <div id="wrap">
-            <div id="aside">
-                <h1>side</h1>
-            </div>
-            <div id="section">
-                <h1>section</h1>
-            </div>
-        </div>
-        <div id="footer">
-            <h1>foot</h1>
-        </div>
+
+        <nav id="main_gnb">
+            <ul>
+                <li><a href="https://github.com/k-mincheol"><img src="/home/kimmincheol/바탕화면/github.png" width="40"
+                            height="40"></a></li>
+            </ul>
+        </nav>
+
+        <nav id="main_lnb">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="content">
+        <section id="main_section">
+            <h1>Main Section</h1>
+            <img src="/home/kimmincheol/git/web_project/img_file/imgtest.png" width="220" height="300">
+            <p>이미지 넣을 공간임</p>
+        </section>
+        <aside id="main_aside">
+            <h1>Main aside</h1>
+            <br>
+            <h1>Mincheol Kim</h1>
+            <br>
+            <h1>major Computer Engineering</h1>
+            <p>개인정보(이름, 나이, 학력, 전공, 개발언어 등)</p>
+            <p>kmc.mincheol@gmail.com</p>
+        </aside>
     </div>
 </body>
 
