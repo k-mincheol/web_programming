@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>속성 test</title>
+</head>
+
+<body>
+    <form>
+        required => 제출하기 전 반드시 채워져야 할 값
+        <hr>
+        전화번호:
+        <input type="tel" name="tel" required pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}" title="####-####-####"><br>
+        <input type="submit">
+
+        <hr>
+
+        신발사이즈
+        <p>230~290까지 10단위로 설정 초기값은 260고정</p>
+        <input type="number" min="230" max="290" step="10" value="260" name="shoesize">
+
+        <hr>
+
+        테니스스킬<br>
+        <p>1~10까지 range 설정 초기값은 1</p>
+        <input type="range" min="1" max="10" value="1">
+
+        <hr>
+    </form>
+</body>
+
+</html>
