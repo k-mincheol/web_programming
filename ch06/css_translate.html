@@ -1,9 +1,10 @@
 ﻿<!DOCTYPE html>
 
 <html>
+
 <head>
     <style>
-        div{
+        div {
             width: 100px;
             height: 100px;
             background-color: yellow;
@@ -11,28 +12,42 @@
             text-align: center;
         }
 
-        div#b2{
+        div#b1 {
+            position: relative;
+            left: 500px;
+            top: 500px;
+            transform: skew(30deg, 20deg);
+            background-color: blue;
+        }
+
+        div#b2 {
             transform: translate(200px, 0px);
             background-color: blue;
         }
-        div#b3{
+
+        div#b3 {
+
             transform: scale(1.2, 1.2);
             background-color: red;
         }
-        div#b4{
+
+        div#b4 {
             transform: rotate(30deg);
             background-color: green;
             opacity: 0.4;
         }
-        div#b4:hover{
+
+        div#b4:hover {
             opacity: 1.0;
         }
     </style>
 </head>
+
 <body>
     <div id="b1">box1</div>
     <div id="b2">box2</div>
     <div id="b3">box3</div>
     <div id="b4">box4</div>
 </body>
+
 </html>
