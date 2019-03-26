@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <script>
+        var x = 10;
+        var y = 20;
+
+        document.write((x > y) + "<br>");
+        document.write((x < y) + "<br>");
+        document.write((x == y) + "<br>");
+        document.write((x != y) + "<br><br>");
+
+        var a = 100;
+        var b = 200;
+        document.write((a == 100) && (b == 122) + "<br>"); // 둘 다 참이어야 참
+        document.write((a == 100 || b == 122) + "<br><br>"); // 하나만 참이면 참
+
+        var max_value = (a > b) ? a : b;
+        document.write(max_value);
+    </script>
+</body>
+
+</html>
