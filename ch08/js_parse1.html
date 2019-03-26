@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My First javascript</title>
+    <script>
+        // 계산기 함수를 생성한다.
+        function plus() {
+            var x = document.getElementById("x").value;
+            var y = document.getElementById("y").value;
+            // id가 x, y인 요소의 값을 가져온다.
+            var result;
+            result = parseInt(x) + parseInt(y);
+            // x와 y는 모두 문자열이다. 그러므로 정수형으로 형변환 시켜서 합한다.
+            document.getElementById("result").value = result;
+        }
+        function minus() {
+            var x = document.getElementById("x").value;
+            var y = document.getElementById("y").value;
+            // id가 x, y인 요소의 값을 가져온다.
+            var result;
+            result = parseInt(x) - parseInt(y);
+            // x와 y는 모두 문자열이다. 그러므로 정수형으로 형변환 시켜서 합한다.
+            document.getElementById("result").value = result;
+        }
+        function multi() {
+            var x = document.getElementById("x").value;
+            var y = document.getElementById("y").value;
+            // id가 x, y인 요소의 값을 가져온다.
+            var result;
+            result = parseInt(x) * parseInt(y);
+            // x와 y는 모두 문자열이다. 그러므로 정수형으로 형변환 시켜서 합한다.
+            document.getElementById("result").value = result;
+        }
+        function div() {
+            var x = document.getElementById("x").value;
+            var y = document.getElementById("y").value;
+            // id가 x, y인 요소의 값을 가져온다.
+            var result;
+            result = parseInt(x) / parseInt(y);
+            // x와 y는 모두 문자열이다. 그러므로 정수형으로 형변환 시켜서 합한다.
+            document.getElementById("result").value = result;
+        }
+    </script>
+</head>
+
+<body>
+    <h2>덧셈 계산기 테스트</h2>
+    <form name="myform" action="..." method="post">
+        첫 번째 정수: <input id="x"><br>
+        두 번째 정수: <input id="y"><br>
+        결과: <input id="result"><br>
+
+        <input type="button" value="더하기" onclick="plus();">
+        <input type="button" value="빼기" onclick="minus();">
+        <input type="button" value="곱하기" onclick="multi();">
+        <input type="button" value="나누기" onclick="div();">
+        <!-- 버튼이 클릭되면 함수를 호출하여 실행한다. -->
+
+    </form>
+
+</body>
+
+</html>
