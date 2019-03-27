@@ -10,14 +10,21 @@
 
             var result = "";
 
+            // 사용자가 입력한 값을 받아와 변수에 넣는다.
             var number = parseInt(document.getElementById("num").value);
+            // 그리고 0으로 초기화 되어있는 추측횟수를 1만큼 증가시킨다.
             guessCheckNum++;
 
+            // 조건문 
             if (number == comNum) {
+                // 컴퓨터가 정한 값이랑 사용자가 적은 값이 같으면
                 result = "성공입니다.";
+
             } else if (number < comNum) {
+                // 사용자가 적은 값이 작을 때
                 result = "작습니다.";
             } else
+                // 사용자가 적은 값이 클 때
                 result = "높습니다.";
 
             document.getElementById("result").value = result;
