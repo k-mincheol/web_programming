@@ -6,10 +6,12 @@
     <script>
         function checkId() {
             var s = document.getElementById("id").value;
-            if(s.length < 6){
+            // s 변수에 id가 id인 요소의 value속성을 읽어오는데
+            // 그 길이가 6보다 작다면 if문 실행
+            if (s.length < 6) {
                 alert("아이디는 6글자 이상이어야 합니다.");
             }
-            
+
         }
     </script>
 </head>
