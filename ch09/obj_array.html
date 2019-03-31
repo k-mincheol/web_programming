@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+    <script>
+        function printArray(a) {
+            document.write("[ ");
+            for (var i = 0; i < a.length; i++) {
+                document.write(a[i] + " ");
+            }
+            document.write("] <br>");
+        }
+
+        var array = new Array();
+        // 배열 객체 생성
+
+        array[0] = "apple";
+        array[1] = "banana";
+        array[2] = "orange";
+        // 각 배열에 값들을 넣어준다.
+
+        array[3] = new Date();
+        // 배열에 객체를 저장한다.
+
+        array[4] = 3.14;
+        // 배열에 실수를 저장한다.
+
+        var array1 = new Array("apple", "banana", "orange");
+        var array2 = ["apple", "banana", "orange"];
+
+        for (i = 0; i < array.length; i++) {
+            document.write(array[i] + "<br>")
+        }
+
+        printArray(array);
+        printArray(array1);
+        printArray(array2);
+
+
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
