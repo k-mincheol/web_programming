@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ch09</title>
+    <script>
+        var msg = "";
+        function test() {
+            try {
+                allert("hello");
+                // 고의적으로 타이핑 오류를 발생시킨다.
+            } catch (error) {
+                msg = "다음과 같은 오류가 발생하였음 : " + error.message;
+                alert(msg);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" value="try-catch 시험" onclick="test()">
+</body>
+
+</html>
