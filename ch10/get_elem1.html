@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ch10</title>
+    <script>
+        function process() {
+            var obj = document.myform.text1;
+            alert(obj.value);
+            // document 안 myform 안의 text1 객체
+            // 출력
+        }
+    </script>
+</head>
+
+<body>
+    <form name="myform">
+        <input type="text" id="target" name="text1">
+        <input type="submit" value="제출" onclick="process()">
+    </form>
+</body>
+
+</html>

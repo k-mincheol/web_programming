@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ch10</title>
+    <script>
+        function process() {
+            var obj = document.getElementById("target");
+            alert(obj.value);
+            // id가 target인 요소를 찾아서 출력한다.
+        }
+    </script>
+</head>
+
+<body>
+    <form name="myform">
+        <input type="text" id="target" name="text1">
+        <input type="submit" value="제출" onclick="process()">
+    </form>
+</body>
+
+</html>
