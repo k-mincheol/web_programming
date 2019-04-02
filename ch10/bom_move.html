@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ch10</title>
+
+    <script>
+        var w;
+        function openWindow() {
+            w = window.open(' ', ' ', 'width=200, height=100');
+            w.document.write("<p>오늘 다음과 같은 상품을 싸게 팝니다.</p>")
+            w.moveTo(0, 0);
+        }
+        function moveWindow() {
+            w.moveBy(10, 10);
+            w.focus();
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" value="윈도우 생성" onclick="openWindow()">
+    <input type="button" value="윈도우 생성" onclick="moveWindow()">
+</body>
+
+</html>
