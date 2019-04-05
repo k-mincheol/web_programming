@@ -10,12 +10,18 @@
     <script src="main.js"></script>
 
     <style>
+        header {
+            height: 30px;
+            margin: 10px;
+        }
+
         #category_img {
             width: 40px;
             height: 40px;
         }
 
         #category_btn {
+            margin-left: 10px;
             border: 0;
             background-color: white;
         }
@@ -31,19 +37,43 @@
             font-size: 12px;
             color: black;
         }
+
+        nav ul {
+            list-style: none;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            text-transform: uppercase;
+            padding: 0 100px;
+            letter-spacing: 5px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+        }
     </style>
 </head>
 
 <body>
-    <header id="header">
+    <header>
         <div id="login_div">
             <a href="#" id="login_page">로그인 · </a>
             <a href="#" id="serviceCenter_page">고객센터</a>
         </div>
     </header>
-
-    <button id="category_btn"><img id="category_img" src="/home/kimmincheol/git/web_programming/team/images/menu.png"></button>
-
+    <div>
+        <button id="category_btn"><img id="category_img" src="/home/kimmincheol/git/web_programming/team/images/menu.png"></button>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#">메인</a></li>
+            <li><a href="#">소개</a></li>
+            <li><a href="#">서비스</a></li>
+        </ul>
+    </nav>
 
     <footer id="footer"></footer>
 </body>

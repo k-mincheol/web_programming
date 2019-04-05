@@ -25,10 +25,7 @@ nav ul{
 }
 
 nav ul li{
-    display: inline;
-    text-transform: uppercase;
-    padding: 0 10px;
-    letter-spacing: 10px;
+    
 }
 
 nav ul li a{
